@@ -1,9 +1,9 @@
 package com.heysanjeet.oops.inheritance;
 
-public class Child extends Super{
-    int cValue = 300;
+public class Child extends Super {
+    int sValue = 300;
 
-    public void printInChildClass() {
-        System.out.println("Hello, In Child Class");
+    public String print() {
+        return "Hello, In Child Class";
     }
 }
