@@ -1,4 +1,4 @@
-package com.heysanjeet.design_pattern;
+package com.heysanjeet.design_pattern.singleton;
 
 public class SingleTon {
     private static SingleTon instance;

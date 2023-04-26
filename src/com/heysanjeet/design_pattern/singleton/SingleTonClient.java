@@ -1,4 +1,4 @@
-package com.heysanjeet.design_pattern;
+package com.heysanjeet.design_pattern.singleton;
 
 public class SingleTonClient {
     public static void main(String[] args) {
