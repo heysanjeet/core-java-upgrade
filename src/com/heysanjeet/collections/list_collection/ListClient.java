@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Client {
+public class ListClient {
     public static void main(String[] args) {
 
         List<String> namesList = new ArrayList<>();
@@ -16,7 +16,9 @@ public class Client {
         namesList.add("Sanjeet");
 
         //namesList.forEach(names -> System.out.println(names));
-        Set<String> setName = namesList.stream().filter(names -> names.startsWith("S")).collect(Collectors.toSet());
-        setName.stream().forEach(name -> System.out.println(name));
+//        Set<String> setName = namesList.stream().filter(names -> names.startsWith("S")).collect(Collectors.toSet());
+//        setName.stream().forEach(name -> System.out.println(name));
+
+        namesList.stream().distinct().sorted().collect(Collectors.toList()).forEach(System.out::println);
     }
 }
