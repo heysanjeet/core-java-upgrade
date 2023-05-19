@@ -7,7 +7,8 @@ public class StreamOperations {
 
     public static void main(String[] args) {
         //flatMapOperation();
-        filterOperation();
+        //filterOperation();
+        anyMatchOperation();
 
     }
 
@@ -37,6 +38,17 @@ public class StreamOperations {
 
         Stream<String> deptList = departmentList.stream();
         deptList.filter(dept -> dept.startsWith("M")).map(dep -> dep.toLowerCase()).forEach(System.out::println);
+    }
+
+    public static void anyMatchOperation(){
+        List<String> departmentList = new ArrayList<>();
+        departmentList.add("IT");
+        departmentList.add("Supply");
+        departmentList.add("HR");
+        departmentList.add("Marketing");
+
+        boolean isTrue=departmentList.stream().anyMatch(dept->dept.contains("IT"));
+        System.out.println(isTrue);
     }
 
 }
