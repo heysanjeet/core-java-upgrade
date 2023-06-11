@@ -7,5 +7,6 @@ public class TaskClient {
 
         Task task2 = new Task();
         task2.start();
+        System.out.println("hello there !"+Thread.currentThread());
     }
 }
