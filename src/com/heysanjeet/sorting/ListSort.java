@@ -11,10 +11,14 @@ public class ListSort {
         //sort
         List<Integer> sortedList = Arrays.stream(intArray).boxed().sorted()
                 .collect(Collectors.toList());
-        System.out.println(sortedList);
+        //System.out.println(sortedList);
 
         //Reverse order
         List<Integer> revSort = sortedList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
-        System.out.println(revSort);
+       // System.out.println(revSort);
+
+        //Using parallel stream
+        List<Integer> integerList = sortedList.parallelStream().sorted().collect(Collectors.toList());
+        integerList.forEach(System.out::println);
     }
 }
