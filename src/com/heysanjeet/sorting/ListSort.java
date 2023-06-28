@@ -19,6 +19,9 @@ public class ListSort {
 
         //Using parallel stream
         List<Integer> integerList = sortedList.parallelStream().sorted().collect(Collectors.toList());
-        integerList.forEach(System.out::println);
+        //integerList.forEach(System.out::println);
+
+        integerList.stream().parallel().map(val->val+10).sorted()
+                .filter(val->val%2==0).forEachOrdered(System.out::println);
     }
 }
