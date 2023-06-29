@@ -23,5 +23,6 @@ public class ListSort {
 
         integerList.stream().parallel().map(val->val+10).sorted()
                 .filter(val->val%2==0).forEachOrdered(System.out::println);
+
     }
 }
