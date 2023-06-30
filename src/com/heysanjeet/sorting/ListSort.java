@@ -13,6 +13,10 @@ public class ListSort {
         System.out.println(distinctIntList);
 
         System.out.println("--------------------------------");
+        //find even no
+        distinctIntList.stream().filter(val->val%2==0).forEachOrdered(System.out::println);
+
+        System.out.println("--------------------------------");
 
         //sort
         List<Integer> sortedList = Arrays.stream(intArray).boxed().sorted()
