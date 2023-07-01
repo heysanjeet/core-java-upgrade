@@ -15,6 +15,7 @@ public class ListExamples {
         list.add("Manish");
         list.add("Sanjeet");
 
+
         Map<String, Long> mapNames = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         mapNames.entrySet().stream().filter(name->name.getKey().startsWith("Sanjeet"))
                 .forEach(System.out::println);
