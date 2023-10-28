@@ -1,5 +1,6 @@
 package com.heysanjeet.datastructure.linkedlist.singlyLL;
 
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -10,6 +11,18 @@ public class LinkedList {
         head = newNode;
         tail = newNode;
         length = 1;
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (head == null && tail == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
     }
 
     public void printList() {
