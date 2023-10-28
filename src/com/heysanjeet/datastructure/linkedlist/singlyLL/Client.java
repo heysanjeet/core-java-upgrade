@@ -5,6 +5,7 @@ public class Client {
         LinkedList linkedList = new LinkedList(10);
         linkedList.append(20);
         linkedList.prepend(50);
+        System.out.println("Removed First "+linkedList.removeFirst().data);
 //        System.out.println("Removed value "+linkedList.remove().data);
         linkedList.printList();
 //        linkedList.getHead();
