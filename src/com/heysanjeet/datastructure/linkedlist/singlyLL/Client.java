@@ -4,6 +4,7 @@ public class Client {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList(10);
         linkedList.append(20);
+        linkedList.remove();
         linkedList.printList();
         linkedList.getHead();
         linkedList.getTail();
