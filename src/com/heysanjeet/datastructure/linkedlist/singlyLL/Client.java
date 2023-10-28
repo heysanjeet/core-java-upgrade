@@ -4,7 +4,7 @@ public class Client {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList(10);
         linkedList.append(20);
-        linkedList.remove();
+        System.out.println("Removed value "+linkedList.remove().data);
         linkedList.printList();
         linkedList.getHead();
         linkedList.getTail();
