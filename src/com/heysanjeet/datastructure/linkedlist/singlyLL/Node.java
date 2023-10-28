@@ -1,4 +1,4 @@
-package com.heysanjeet.datastructure.linkedlist;
+package com.heysanjeet.datastructure.linkedlist.singlyLL;
 
 public class Node {
     public Node next;
