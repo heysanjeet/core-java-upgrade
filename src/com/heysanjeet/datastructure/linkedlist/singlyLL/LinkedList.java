@@ -64,11 +64,11 @@ public class LinkedList {
             return null;
         } else {
             head = head.next;
-            temp.next=null;
+            temp.next = null;
         }
         length--;
         if (length == 0) {
-            return tail;
+            tail = null;
         }
         return temp;
     }
