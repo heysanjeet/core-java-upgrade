@@ -5,6 +5,7 @@ public class Client {
         LinkedList linkedList = new LinkedList(10);
         linkedList.append(20);
         linkedList.append(50);
+        linkedList.set(3,30);
         linkedList.printList();
         System.out.println("--------------------------");
         System.out.println(linkedList.get(3).data);//50

@@ -84,6 +84,15 @@ public class LinkedList {
         return temp;
     }
 
+    public boolean set(int index, int value) {
+        Node temp = get(index);
+        if (temp != null) {
+            temp.data = value;
+            return true;
+        }
+        return false;
+    }
+
     public void printList() {
         Node temp = head;
         while (temp != null) {
