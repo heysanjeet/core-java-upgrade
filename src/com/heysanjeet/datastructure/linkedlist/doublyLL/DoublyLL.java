@@ -12,6 +12,19 @@ public class DoublyLL {
         length = 1;
     }
 
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+        length++;
+    }
+
     public void print() {
         Node temp = head;
         while (temp != null) {
