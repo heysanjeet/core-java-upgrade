@@ -28,7 +28,7 @@ public class DoublyLL {
     public Node removeLast() {
         Node temp = tail;
         if (head == null) {
-           return null;
+            return null;
         }
         if (length == 1) {
             head = null;
@@ -38,6 +38,35 @@ public class DoublyLL {
             tail.next = null;
             temp.prev = null;
         }
+        length--;
+        return temp;
+    }
+
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        length++;
+    }
+
+    public Node removeFirst() {
+        Node temp = head;
+        if (head == null) {
+            return null;
+        }
+        if (length == 1) {
+            head = null;
+            tail = null;
+        }
+        head = head.next;
+        head.prev = null;
+        temp.next = null;
         length--;
         return temp;
     }
