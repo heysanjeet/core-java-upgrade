@@ -51,11 +51,11 @@ public class DoublyLL {
     }
 
     public void getHead() {
-        System.out.println("Head " + head.value);
+        System.out.println("Head " + head);
     }
 
     public void getTail() {
-        System.out.println("Tail " + tail.value);
+        System.out.println("Tail " + tail);
     }
 
     public void length() {
