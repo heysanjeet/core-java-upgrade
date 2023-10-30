@@ -25,6 +25,23 @@ public class DoublyLL {
         length++;
     }
 
+    public Node removeLast() {
+        Node temp = tail;
+        if (head == null) {
+           return null;
+        }
+        if (length == 1) {
+            head = null;
+            tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+            temp.prev = null;
+        }
+        length--;
+        return temp;
+    }
+
     public void print() {
         Node temp = head;
         while (temp != null) {
