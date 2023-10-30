@@ -6,6 +6,9 @@ public class Client {
         doublyLL.append(10);
         doublyLL.prepend(25);
         doublyLL.removeFirst();
+
+        System.out.println(doublyLL.get(1).value);
+        System.out.println("--------------------------");
         //System.out.println("Removed last value " + doublyLL.removeLast().value);
         doublyLL.print();
         doublyLL.getHead();
