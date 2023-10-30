@@ -6,6 +6,8 @@ public class Client {
         linkedList.append(2);
 
         linkedList.insert(1,30);
+        linkedList.remove(1);
+        linkedList.reverse();
         linkedList.printList();
 
         System.out.println("--------------------------");
