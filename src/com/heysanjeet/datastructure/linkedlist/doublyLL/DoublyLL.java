@@ -110,6 +110,51 @@ public class DoublyLL {
         return false;
     }
 
+    public boolean insert(int index, int value) {
+        if (index < 0 || index > length) {
+            return false;
+        }
+        if (index == 0) {
+            prepend(value);
+            length++;
+            return true;
+        }
+        if (index == length) {
+            append(value);
+            length++;
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node before = get(index - 1);
+        Node after = before.next;
+        newNode.prev = before;
+        newNode.next = after;
+        before.next = newNode;
+        after.prev = newNode;
+        length++;
+        return true;
+    }
+
+    public Node remove(int index) {
+        if (index < 0 || index >= length) {
+            return null;
+        }
+        if (index == 0) {
+            removeFirst();
+        }
+        if (index == length - 1) {
+            removeLast();
+        }
+        Node temp = get(index);
+        temp.next.prev = temp.prev;
+        temp.prev.next = temp.next;
+        temp.next = null;
+        temp.prev = null;
+        length--;
+        return temp;
+
+    }
+
     public void print() {
         Node temp = head;
         while (temp != null) {
