@@ -28,6 +28,9 @@ public class Queue {
         Node temp = first;
         if (first == null) {
             return null;
+        }
+        if (length == 1) {
+            return null;
         } else {
             first = first.next;
         }
