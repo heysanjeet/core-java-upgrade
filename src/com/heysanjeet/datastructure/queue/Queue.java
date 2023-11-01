@@ -1,9 +1,9 @@
 package com.heysanjeet.datastructure.queue;
 
 public class Queue {
-    public Node first;
-    public Node last;
-    public int length;
+    private Node first;
+    private Node last;
+    private int length;
 
     public Queue(int value) {
         Node newNode = new Node(value);
@@ -33,6 +33,14 @@ public class Queue {
         }
         length--;
         return temp;
+    }
+
+    public void getFirst() {
+        System.out.println("First " + first.value);
+    }
+
+    public void getLast() {
+        System.out.println("Last " + last.value);
     }
 
     public void print() {
