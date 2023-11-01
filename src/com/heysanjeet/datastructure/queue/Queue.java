@@ -30,7 +30,8 @@ public class Queue {
             return null;
         }
         if (length == 1) {
-            return null;
+            first = null;
+            last = null;
         } else {
             first = first.next;
         }
