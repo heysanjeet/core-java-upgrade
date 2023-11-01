@@ -34,6 +34,7 @@ public class Queue {
             last = null;
         } else {
             first = first.next;
+            temp.next = null;
         }
         length--;
         return temp;
