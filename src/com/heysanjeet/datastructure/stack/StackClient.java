@@ -5,6 +5,7 @@ public class StackClient {
         Stack stack = new Stack(10);
         stack.push(20);
         stack.push(30);
+        stack.pop();
         System.out.println(stack.size());
         System.out.println("-----------------");
         stack.printStack();
