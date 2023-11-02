@@ -12,6 +12,9 @@ public class BSTClient {
 
         myBST.insert(27);
 
+        System.out.println(myBST.contains(27));//true
+        System.out.println(myBST.contains(17));//false
+
     }
 
 }
