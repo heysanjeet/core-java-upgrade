@@ -22,6 +22,18 @@ public class HashTable {
         }
     }
 
+    public int get(String key) {
+        int index = hash(key);
+        Node temp = dataMap[index];
+        while (temp != null) {
+            if (temp.key == key) {
+                return temp.value;
+            }
+            temp = temp.next;
+        }
+        return 0;
+    }
+
     private int hash(String key) {
         int hash = 0;
         char[] keyChars = key.toCharArray();
@@ -36,7 +48,7 @@ public class HashTable {
 
     public void printTable() {
         for (int i = 0; i < dataMap.length; i++) {
-            System.out.println("-------i------ " + i);
+            System.out.println("------- " + i + " ------ ");
             Node temp = dataMap[i];
             while (temp != null) {
                 System.out.println("Key " + temp.key + " value " + temp.value);
