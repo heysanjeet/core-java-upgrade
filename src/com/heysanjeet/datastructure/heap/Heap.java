@@ -8,5 +8,6 @@ public class Heap {
 
     public Heap() {
         this.heap = new ArrayList<>();
+
     }
 }
