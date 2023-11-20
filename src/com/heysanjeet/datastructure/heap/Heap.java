@@ -6,10 +6,13 @@ import java.util.List;
 public class Heap {
     private List<Integer> heap;
 
+
     public Heap() {
         this.heap = new ArrayList<>();
 
     }
+
+
 
     private void swap(int index1, int index2) {
         int temp = heap.get(index1);
