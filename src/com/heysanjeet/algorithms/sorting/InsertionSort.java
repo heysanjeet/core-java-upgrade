@@ -11,6 +11,7 @@ public class InsertionSort {
     }
 
     //always start from 2nd item
+    //if array is sorted tc=O(n)
     public static int[] insertionSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
             int temp = array[i];
