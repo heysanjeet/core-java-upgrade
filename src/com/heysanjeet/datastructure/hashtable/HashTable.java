@@ -1,4 +1,4 @@
-package com.heysanjeet.datastructure.HashTable;
+package com.heysanjeet.datastructure.hashtable;
 
 import java.util.ArrayList;
 

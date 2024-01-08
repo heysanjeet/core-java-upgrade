@@ -1,4 +1,4 @@
-package com.heysanjeet.datastructure.HashTable;
+package com.heysanjeet.datastructure.hashtable;
 
 public class HashTableClient {
     public static void main(String[] args) {

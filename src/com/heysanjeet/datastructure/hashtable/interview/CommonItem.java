@@ -1,4 +1,4 @@
-package com.heysanjeet.datastructure.HashTable.interview;
+package com.heysanjeet.datastructure.hashtable.interview;
 
 import java.util.HashMap;
 
