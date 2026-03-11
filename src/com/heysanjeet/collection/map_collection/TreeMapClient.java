@@ -1,0 +1,16 @@
+package com.heysanjeet.collection.map_collection;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMapClient {
+    public static void main(String[] args) {
+        Map<String, String> cityMap = new TreeMap<>();
+        cityMap.put("Bihar", "Patna");
+        cityMap.put("Karnataka", "Bangalore");
+        cityMap.put("Maharashtra", "Mumbai");
+
+        System.out.println(cityMap);
+    }
+
+}
