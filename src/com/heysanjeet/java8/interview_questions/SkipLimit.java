@@ -6,6 +6,9 @@ import java.util.stream.IntStream;
 
 public class SkipLimit {
     public static void main(String[] args) {
+        /**
+         *Extract a subrange of numbers from a given range.
+         */
         IntStream intStream = IntStream.rangeClosed(1, 10);
         //print only 2 to 9
         List<Integer> intList = intStream.boxed().skip(1).limit(8).collect(Collectors.toList());

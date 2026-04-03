@@ -7,7 +7,11 @@ import java.util.stream.Collectors;
 
 public class FirstRepeatCharactor {
     public static void main(String[] args) {
-        String str = "iloveyou";
+
+        /**
+         * Find the first repeating character in a given string.
+         */
+        String str = "welcometojava";
         String firstRepeat = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
                 .entrySet().stream().filter(mapItems -> mapItems.getValue() > 1)

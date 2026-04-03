@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
 
 public class FindSecondHighestNo {
     public static void main(String[] args) {
+
+        /**
+         * Find the second highest element in an array of integers.
+         */
         int[] array = {5, 9, 11, 2, 8, 21, 1};
         //find second highest
         /*Integer integer = Arrays.stream(array).boxed().sorted(Comparator.reverseOrder()).collect(Collectors.toList())

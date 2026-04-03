@@ -9,7 +9,11 @@ import java.util.stream.Stream;
 
 public class FindUnique {
     public static void main(String[] args) {
-        String str = "iloveyou";
+
+        /**
+         * Find all non-repeating characters in a given string.
+         */
+        String str = "SanjeetKumar";
         List<String> collect = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream().filter(chars -> chars.getValue() == 1)
