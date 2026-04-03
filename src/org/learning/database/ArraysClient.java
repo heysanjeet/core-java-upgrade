@@ -6,7 +6,10 @@ public class ArraysClient {
         System.out.println(findMaxSum(nums,2));
     }
 
-    private static int findMaxSum(int[] nums, int k){
+    /**
+     *Find the maximum sum of a subarray of size k
+     */
+    public static int findMaxSum(int[] nums, int k){
         if(nums.length<k){
             return -1;
         }
